@@ -22,8 +22,9 @@ loop.forEach(()=>
 /* For log verification purposes */
     for (let i=numberOfQuestions;i>=0;i--)
 {
+    questionCounter++
     console.log(i);
-}
+}let questionCounter = 0;
 })
 
 /* The strings used in the final text. */
