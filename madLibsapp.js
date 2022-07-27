@@ -14,19 +14,25 @@ let questionArray = [`Hi i am `,`, I born in `,` and i love `,`, my objetive in 
 /*
    --Here I start to create a repetition system with forEach
    --I undid mistakes and left it in a way that can run with my humble knowledge ;-;
-   
+   ----------------------------------------------------------------------------------
    --What I understood from the problem: 
    --
    --when I do it inside the for it can't associate 
    --that the word must go to the array before going to the next prompt
+   ---------------------------------------------------------------------
+   --stubborn with the loops but this time without forEach just with 
+   --for,and it's not that it worked
 */
 
-let word0 = prompt(userInputs[0]);
-let word1 = prompt(userInputs[1]);
-let word2 = prompt(userInputs[2]);
-let word3 = prompt(userInputs[3]);
-
+let word0,word1,word2,word3;
 let arrayWord = [word0,word1,word2,word3];
+
+for(i = 3;i >= 0;i--){
+
+ arrayWord[i] = prompt(userInputs[i]);
+ console.log(`${i} questions left`);
+
+}
 
 /* Here I write the story joining the questionray and the user msgs. */
 let originalStory = `${questionArray[0]} ${arrayWord[0]} ${questionArray[1]} ${arrayWord[1]} ${questionArray[2]} ${arrayWord[2]} ${questionArray[3]} ${arrayWord[3]}`;
