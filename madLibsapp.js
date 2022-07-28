@@ -24,12 +24,12 @@ let questionArray = [`Hi i am `,`, I born in `,` and i love `,`, my objetive in 
    --for,and it's not that it worked
 */
 
-let word0,word1,word2,word3;
-let arrayWord = [word0,word1,word2,word3];
+
+let arrayWord = [];
 
 for(i = 3;i >= 0;i--){
 
- arrayWord[i] = prompt(userInputs[i]);
+ arrayWord.push(prompt(userInputs[i]));
  console.log(`${i} questions left`);
 
 }
