@@ -34,11 +34,17 @@ for(i = 3;i >= 0;i--){
 
 }
 
+alert('All done! Ready for your totally-accurate, not-at-all confusing history of tech??');
+
 /* Here I write the story joining the questionray and the user msgs. */
 let originalStory = `${questionArray[0]} ${arrayWord[0]} ${questionArray[1]} ${arrayWord[1]} ${questionArray[2]} ${arrayWord[2]} ${questionArray[3]} ${arrayWord[3]}`;
 
+<h2>originalStory</h2>
+
 /* The Final Text */    
 console.log(originalStory);
+
+document.write(originalStory);
 
 //Save
 //`Hi i am, i born in, and i love, my objetive in this my history is,`
